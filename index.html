@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAFINEevoEH3S10sibVcDQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Zip-Code App(Location Finder)</title>
+  </head>
+  <body>
+    <section class="hero hero-body is-dark container">
+      <h1 class="title">Nigeria Location Info</h1>
+      <h2 class="subtitle">Enter a zipcode to get the location info</h2>
+      <form action="" id="zipForm">
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input
+              type="text"
+              class="input zip is-large"
+              placeholder="Enter zipcode"
+            />
+            <span class="icon is-small is-left icon-check">
+              <i class="fa fa-map-pin"> location pins</i>
+            </span>
+            <span class="icon is-small is-right icon-remove">
+              <i class="fa fa-remove"> remove </i>
+            </span>
+          </div>
+        </div>
+      </form>
+    </section>
+    <br>
+    <div class="container">
+        <div id="output"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
